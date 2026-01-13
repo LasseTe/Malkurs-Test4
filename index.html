@@ -1,0 +1,1880 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malkurs: MalZeit</title>
+  <meta name="description" content="MalZeit – ein hochwertiger, ruhiger Malkurs. Kursüberblick, Materialien, Preise, Galerie, FAQ und Terminbuchung. (Platzhaltertexte)">
+
+  <meta property="og:title" content="Malkurs: MalZeit">
+  <meta property="og:description" content="MalZeit – ein hochwertiger, ruhiger Malkurs. (Platzhaltertexte)">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="MalZeit">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Cdefs%3E%3CradialGradient id='g' cx='30%25' cy='25%25' r='80%25'%3E%3Cstop offset='0%25' stop-color='%23f3efe8'/%3E%3Cstop offset='55%25' stop-color='%23fbfaf8'/%3E%3Cstop offset='100%25' stop-color='%23ffffff'/%3E%3C/radialGradient%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238a6bff' stop-opacity='.26'/%3E%3Cstop offset='1' stop-color='%231bbf9b' stop-opacity='.18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='630' fill='url(%23g)'/%3E%3Cpath d='M0,430 C240,360 360,520 600,450 C840,380 980,520 1200,420 L1200,630 L0,630 Z' fill='url(%23a)'/%3E%3Ctext x='78' y='210' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial' font-size='74' fill='%23181613'%3EMalZeit%3C/text%3E%3Ctext x='82' y='292' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial' font-size='28' fill='%23413a36'%3EMalkurs%20%E2%80%93%20ruhig.%20klar.%20kunstnah.%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#fbfaf8">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='30%25' r='80%25'%3E%3Cstop offset='0%25' stop-color='%23ffffff'/%3E%3Cstop offset='55%25' stop-color='%23fbfaf8'/%3E%3Cstop offset='100%25' stop-color='%23f0e9df'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M18 44c10-2 18-10 22-22 6 5 8 12 6 18-2 7-9 11-18 12-4 1-8-2-10-8z' fill='%23181613' fill-opacity='.92'/%3E%3C/svg%3E">
+
+  <style>
+    :root{
+      --bg: #fbfaf8;
+      --bg-2: #ffffff;
+      --ink: #1b1816;
+      --ink-2: #3f3a36;
+      --muted: rgba(27,24,22,.72);
+      --muted-2: rgba(27,24,22,.58);
+      --border: rgba(27,24,22,.12);
+
+      --accent: #8a6bff;
+      --accent-2: #1bbf9b;
+
+      --shadow: 0 18px 60px rgba(17,14,12,.12);
+      --shadow-2: 0 10px 28px rgba(17,14,12,.10);
+
+      --radius: 18px;
+      --radius-lg: 26px;
+
+      --max: 1160px;
+      --header-h: 76px;
+
+      --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --font-serif: ui-serif, Georgia, "Times New Roman", Times, serif;
+
+      --tracking: -0.014em;
+    }
+
+    *{ box-sizing: border-box; }
+    html{
+      scroll-behavior: smooth;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+    }
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior: auto; }
+      *, *::before, *::after{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+    }
+
+    body{
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--font-sans);
+      letter-spacing: var(--tracking);
+      line-height: 1.55;
+      background:
+        radial-gradient(1200px 820px at 10% -10%, rgba(138,107,255,.14), transparent 58%),
+        radial-gradient(980px 720px at 92% 18%, rgba(27,191,155,.12), transparent 56%),
+        radial-gradient(860px 660px at 52% 120%, rgba(138,107,255,.09), transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg) 42%, var(--bg-2) 100%);
+      min-height: 100vh;
+    }
+
+    body::before{
+      content:"";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .05;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(27,24,22,.20), rgba(27,24,22,.20) 1px, transparent 1px, transparent 2px),
+        repeating-linear-gradient(90deg, rgba(27,24,22,.16), rgba(27,24,22,.16) 1px, transparent 1px, transparent 3px);
+      mix-blend-mode: multiply;
+      filter: blur(0.2px);
+      z-index: -1;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: underline; text-underline-offset: 4px; }
+
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible{
+      outline: 3px solid rgba(138,107,255,.42);
+      outline-offset: 3px;
+      border-radius: 14px;
+    }
+
+    .skip-link{
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      transform: translateY(-150%);
+      background: rgba(255,255,255,.94);
+      color: var(--ink);
+      padding: 10px 12px;
+      border-radius: 12px;
+      z-index: 9999;
+      box-shadow: var(--shadow-2);
+      font-weight: 760;
+      border: 1px solid var(--border);
+    }
+    .skip-link:focus{ transform: translateY(0); }
+
+    .container{
+      width: min(var(--max), calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    header.site-header{
+      position: sticky;
+      top: 0;
+      z-index: 1200;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      background: rgba(251,250,248,.92);
+      border-bottom: 1px solid rgba(27,24,22,.10);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .header-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: 14px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+    .brand-mark{
+      width: 30px;
+      height: 30px;
+      border-radius: 12px;
+      background: radial-gradient(80% 80% at 30% 25%, rgba(255,255,255,1) 0%, rgba(251,250,248,.95) 55%, rgba(240,233,223,1) 100%);
+      box-shadow: 0 14px 30px rgba(17,14,12,.12);
+      border: 1px solid rgba(27,24,22,.10);
+      position: relative;
+      overflow: hidden;
+    }
+    .brand-mark::after{
+      content:"";
+      position:absolute;
+      inset: -10px -12px auto auto;
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background: rgba(138,107,255,.16);
+      transform: rotate(18deg);
+      filter: blur(.2px);
+    }
+    .brand-name{
+      display: grid;
+      line-height: 1.06;
+    }
+    .brand-name small{
+      font-weight: 740;
+      color: var(--muted-2);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+    .brand-name span{
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    nav.primary-nav{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-toggle{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.64);
+      color: var(--ink);
+      cursor: pointer;
+      font-weight: 820;
+      box-shadow: var(--shadow-2);
+    }
+    .nav-toggle .dots{
+      width: 18px;
+      height: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px;
+      opacity: .9;
+    }
+    .nav-toggle .dots span{
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background: rgba(27,24,22,.75);
+    }
+
+    .nav-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      gap: 6px;
+      align-items: center;
+    }
+    .nav-list a{
+      display: inline-flex;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      color: var(--muted);
+      font-weight: 800;
+      white-space: nowrap;
+      transition: background .14s ease, border-color .14s ease, transform .14s ease;
+    }
+    .nav-list a:hover{
+      background: rgba(255,255,255,.60);
+      border-color: var(--border);
+      color: var(--ink);
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-2);
+    }
+
+    .nav-cta{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(138,107,255,.28);
+      background: linear-gradient(180deg, rgba(138,107,255,.18), rgba(255,255,255,.68));
+      box-shadow: var(--shadow-2);
+      font-weight: 860;
+      transition: transform .14s ease;
+      white-space: nowrap;
+    }
+    .nav-cta:hover{ text-decoration: none; transform: translateY(-1px); }
+
+    @media (min-width: 980px){
+      .nav-toggle{ display: none; }
+      .nav-list{ display: flex; }
+    }
+
+    .nav-panel{
+      display: none;
+    }
+    @media (max-width: 979px){
+      .nav-panel{
+        display: block;
+        position: fixed;
+        top: var(--header-h);
+        left: 0;
+        right: 0;
+        background: rgba(251,250,248,.94);
+        border-bottom: 1px solid rgba(27,24,22,.10);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .18s ease, transform .18s ease;
+        z-index: 1100;
+      }
+      .nav-panel.open{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .nav-panel .container{ padding: 14px 0 18px; }
+      .nav-panel .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+    }
+
+    main{ padding-bottom: 70px; }
+    section{ scroll-margin-top: calc(var(--header-h) + 18px); }
+
+    .hero{ padding: 56px 0 22px; position: relative; }
+    .hero-grid{ display: grid; gap: 16px; align-items: stretch; }
+    @media (min-width: 1040px){ .hero-grid{ grid-template-columns: 1.25fr .75fr; } }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.70));
+      border: 1px solid rgba(27,24,22,.10);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset: -2px;
+      border-radius: inherit;
+      background:
+        radial-gradient(700px 320px at 18% 20%, rgba(138,107,255,.14), transparent 55%),
+        radial-gradient(680px 300px at 86% 12%, rgba(27,191,155,.10), transparent 58%);
+      opacity: .75;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .card > *{ position: relative; z-index: 1; }
+
+    .card-inner{ padding: 22px; }
+    @media (min-width: 720px){ .card-inner{ padding: 28px; } }
+
+    .eyebrow{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.62);
+      color: var(--muted);
+      font-weight: 820;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      font-size: 11px;
+      box-shadow: var(--shadow-2);
+    }
+    .eyebrow .dot{
+      width: 8px; height: 8px; border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, rgba(138,107,255,.95) 0%, rgba(255,255,255,.95) 70%);
+      box-shadow: 0 10px 22px rgba(138,107,255,.18);
+    }
+
+    h1, h2, h3{ margin: 0; line-height: 1.12; letter-spacing: -0.035em; }
+    h1{ font-size: clamp(38px, 4.6vw, 58px); margin-top: 14px; }
+    h2{ font-size: clamp(24px, 2.7vw, 34px); }
+    h3{ font-size: 18px; letter-spacing: -0.02em; }
+
+    .lead{
+      margin: 14px 0 0;
+      color: var(--ink-2);
+      font-size: 17px;
+      max-width: 64ch;
+      line-height: 1.65;
+    }
+
+    .hero-actions{
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(27,24,22,.14);
+      background: rgba(255,255,255,.64);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+      user-select: none;
+      box-shadow: var(--shadow-2);
+    }
+    .btn:hover{
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(17,14,12,.12);
+      background: rgba(255,255,255,.78);
+    }
+    .btn.primary{
+      border-color: rgba(138,107,255,.30);
+      background: linear-gradient(180deg, rgba(138,107,255,.20), rgba(255,255,255,.78));
+    }
+    .btn.ghost{
+      background: rgba(255,255,255,.46);
+      color: var(--muted);
+      font-weight: 860;
+    }
+
+    .fineprint{
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .hero-aside{ min-height: 260px; display: grid; place-items: stretch; }
+    .stats{ display: grid; gap: 10px; margin-top: 10px; }
+    .stat{
+      display: grid;
+      gap: 4px;
+      padding: 14px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.66);
+      box-shadow: var(--shadow-2);
+    }
+    .stat strong{ font-size: 16px; letter-spacing: -0.02em; }
+    .stat span{ font-size: 13px; color: var(--muted); }
+
+    .quote-strip{ padding: 16px 0 6px; }
+    .quote-card{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.84), rgba(255,255,255,.62));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    .quote-card::after{
+      content:"";
+      position:absolute; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(138,107,255,.20), transparent 35%, rgba(27,191,155,.16)),
+        radial-gradient(600px 200px at 10% 10%, rgba(138,107,255,.12), transparent 55%),
+        radial-gradient(640px 240px at 90% 30%, rgba(27,191,155,.10), transparent 55%);
+      opacity: .55;
+      pointer-events: none;
+    }
+    .quote-inner{
+      padding: 18px 20px;
+      display: grid;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    @media (min-width: 720px){ .quote-inner{ padding: 20px 24px; } }
+
+    blockquote{
+      margin: 0; padding: 0;
+      font-family: var(--font-serif);
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      line-height: 1.38;
+      color: var(--ink);
+      max-width: 72ch;
+    }
+    .quote-meta{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: baseline;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .quote-meta .author{ font-weight: 900; color: rgba(27,24,22,.86); }
+    .quote-meta a{
+      color: rgba(27,24,22,.78);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      font-weight: 820;
+    }
+    .quote-meta a:hover{ color: rgba(27,24,22,.95); }
+
+    .section{ padding: 44px 0; position: relative; }
+    .section::before{
+      content:"";
+      position: absolute; left: 0; right: 0; top: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(27,24,22,.10), transparent);
+    }
+    .section-head{ display: grid; gap: 10px; margin-bottom: 18px; }
+    .section-head p{
+      margin: 0;
+      color: var(--muted);
+      max-width: 76ch;
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    .grid-3{ display: grid; gap: 12px; }
+    @media (min-width: 920px){ .grid-3{ grid-template-columns: repeat(3, 1fr); gap: 14px; } }
+
+    .tile{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.66));
+      padding: 18px;
+      box-shadow: var(--shadow-2);
+      position: relative;
+      overflow: hidden;
+    }
+    .tile::before{
+      content:"";
+      position:absolute; inset: -2px;
+      background:
+        radial-gradient(520px 220px at 20% 10%, rgba(138,107,255,.10), transparent 55%),
+        radial-gradient(540px 240px at 85% 20%, rgba(27,191,155,.08), transparent 55%);
+      opacity: .65;
+      pointer-events: none;
+    }
+    .tile > *{ position: relative; z-index: 1; }
+    .tile p{ margin: 10px 0 0; color: var(--muted); font-size: 14.5px; line-height: 1.7; }
+
+    .list{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+    .list li{ margin: 8px 0; }
+    .list strong{ color: rgba(27,24,22,.88); }
+
+    .pricing{ display: grid; gap: 12px; align-items: stretch; }
+    @media (min-width: 1020px){ .pricing{ grid-template-columns: repeat(3, 1fr); gap: 14px; } }
+    .price-card{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.68));
+      box-shadow: var(--shadow);
+      padding: 18px;
+      overflow: hidden;
+      position: relative;
+    }
+    .price-card::before{
+      content:"";
+      position:absolute; inset: -2px;
+      background:
+        radial-gradient(780px 320px at 22% 0%, rgba(138,107,255,.14), transparent 55%),
+        radial-gradient(820px 360px at 88% 16%, rgba(27,191,155,.10), transparent 58%);
+      opacity: .60;
+      pointer-events:none;
+    }
+    .price-card > *{ position: relative; z-index: 1; }
+    .price-card.featured{ border-color: rgba(138,107,255,.32); }
+
+    .badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: rgba(27,24,22,.92);
+      background: rgba(255,255,255,.86);
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(27,24,22,.10);
+      box-shadow: var(--shadow-2);
+    }
+    .price-title{ margin-top: 12px; font-size: 18px; font-weight: 920; letter-spacing: -0.02em; }
+    .price-amt{ margin-top: 10px; font-size: 30px; letter-spacing: -0.03em; font-weight: 940; }
+    .price-amt small{ font-size: 13px; color: var(--muted); font-weight: 780; letter-spacing: 0; margin-left: 6px; }
+    .price-card ul{ margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
+    .price-card li{ margin: 8px 0; }
+
+    .gallery{ display: grid; gap: 12px; }
+    @media (min-width: 840px){ .gallery{ grid-template-columns: repeat(3, 1fr); gap: 14px; } }
+
+    figure{
+      margin: 0;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.68));
+      box-shadow: var(--shadow-2);
+      min-height: 170px;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      position: relative;
+    }
+    .img-ph{
+      position: relative;
+      min-height: 160px;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      background:
+        radial-gradient(560px 240px at 18% 22%, rgba(138,107,255,.18), transparent 58%),
+        radial-gradient(520px 220px at 86% 14%, rgba(27,191,155,.14), transparent 58%),
+        linear-gradient(180deg, rgba(255,255,255,.66), rgba(255,255,255,.42));
+    }
+    .img-ph::before{
+      content:"";
+      position: absolute;
+      inset: 14px;
+      border-radius: 18px;
+      border: 1px dashed rgba(27,24,22,.18);
+      opacity: .9;
+    }
+    .img-ph::after{
+      content:"";
+      position:absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,.00) 0%, rgba(255,255,255,.16) 35%, rgba(255,255,255,.00) 70%);
+      transform: translateX(-30%);
+      animation: sheen 6s ease-in-out infinite;
+      opacity: .55;
+      pointer-events:none;
+    }
+    @keyframes sheen{
+      0%{ transform: translateX(-35%); }
+      50%{ transform: translateX(35%); }
+      100%{ transform: translateX(-35%); }
+    }
+    @media (prefers-reduced-motion: reduce){ .img-ph::after{ animation: none; } }
+
+    .img-ph span{
+      position: relative; z-index: 1;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: rgba(27,24,22,.70);
+      text-align: center;
+    }
+    figcaption{
+      padding: 12px 14px 14px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.60);
+    }
+
+    .about{ display: grid; gap: 12px; align-items: start; }
+    @media (min-width: 1020px){ .about{ grid-template-columns: .78fr 1.22fr; gap: 14px; } }
+
+    .portrait{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.68));
+      box-shadow: var(--shadow);
+      padding: 18px;
+      min-height: 240px;
+      display: grid;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .portrait::before{
+      content:"";
+      position:absolute; inset: -2px;
+      background:
+        radial-gradient(640px 260px at 20% 18%, rgba(138,107,255,.16), transparent 55%),
+        radial-gradient(620px 260px at 84% 70%, rgba(27,191,155,.10), transparent 60%);
+      opacity: .70;
+      pointer-events:none;
+    }
+    .portrait > *{ position: relative; z-index: 1; }
+    .portrait .avatar{
+      width: 58px; height: 58px;
+      border-radius: 20px;
+      background: radial-gradient(circle at 30% 25%, rgba(255,255,255,1) 0%, rgba(251,250,248,.95) 55%, rgba(240,233,223,1) 100%);
+      border: 1px solid rgba(27,24,22,.12);
+      box-shadow: 0 18px 35px rgba(17,14,12,.12);
+      position: relative;
+      overflow: hidden;
+    }
+    .portrait .avatar::after{
+      content:"";
+      position:absolute;
+      inset: -14px -12px auto auto;
+      width: 40px; height: 40px;
+      border-radius: 999px;
+      background: rgba(138,107,255,.18);
+      transform: rotate(18deg);
+    }
+    .portrait p{ margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.75; }
+    .portrait .meta{ display: grid; gap: 4px; }
+    .portrait .meta strong{ font-size: 16px; letter-spacing: -0.02em; font-weight: 940; }
+    .portrait .meta span{ font-size: 13px; color: var(--muted-2); letter-spacing: 0.02em; }
+
+    .faq{ display: grid; gap: 10px; }
+    details{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.70));
+      box-shadow: var(--shadow-2);
+      overflow: hidden;
+    }
+    summary{
+      padding: 14px 16px;
+      cursor: pointer;
+      list-style: none;
+      font-weight: 920;
+      color: rgba(27,24,22,.92);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    summary::-webkit-details-marker{ display: none; }
+    summary::after{
+      content: "＋";
+      font-weight: 900;
+      color: rgba(27,24,22,.64);
+      flex: none;
+      line-height: 1;
+      transform: translateY(-1px);
+    }
+    details[open] summary::after{ content: "—"; }
+    .faq-content{ padding: 0 16px 16px; color: var(--muted); font-size: 14.5px; line-height: 1.75; }
+    .faq-content p{ margin: 10px 0 0; }
+
+    .contact{ display: grid; gap: 12px; }
+    @media (min-width: 1020px){ .contact{ grid-template-columns: 1fr 1fr; gap: 14px; } }
+    .contact-card{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.68));
+      box-shadow: var(--shadow);
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-card::before{
+      content:"";
+      position:absolute; inset: -2px;
+      background:
+        radial-gradient(700px 280px at 18% 12%, rgba(138,107,255,.12), transparent 55%),
+        radial-gradient(700px 280px at 85% 35%, rgba(27,191,155,.10), transparent 60%);
+      opacity: .65;
+      pointer-events:none;
+    }
+    .contact-card > *{ position: relative; z-index: 1; }
+    .contact-card h3{ margin-bottom: 10px; }
+
+    .contact-list{ display: grid; gap: 10px; margin-top: 6px; color: var(--muted); font-size: 14.5px; }
+
+    .pill{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.74);
+      box-shadow: var(--shadow-2);
+      text-decoration: none;
+      transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+    }
+    .pill:hover{
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(17,14,12,.12);
+      background: rgba(255,255,255,.86);
+    }
+
+    .icon{
+      width: 18px; height: 18px;
+      display: inline-block;
+      border-radius: 7px;
+      background: rgba(138,107,255,.16);
+      border: 1px solid rgba(138,107,255,.18);
+      box-shadow: 0 12px 22px rgba(138,107,255,.10);
+      position: relative;
+      flex: none;
+    }
+    .icon::after{
+      content:"";
+      position:absolute;
+      inset: 5px;
+      border-radius: 6px;
+      background: rgba(27,24,22,.78);
+      opacity: .22;
+    }
+
+    .form{ display: grid; gap: 10px; margin-top: 10px; }
+    label{
+      display: grid;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 860;
+      letter-spacing: 0.01em;
+    }
+    input, textarea{
+      width: 100%;
+      border-radius: 18px;
+      border: 1px solid rgba(27,24,22,.12);
+      background: rgba(255,255,255,.82);
+      color: var(--ink);
+      padding: 12px 12px;
+      font: inherit;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.60);
+    }
+    textarea{ min-height: 120px; resize: vertical; }
+    .form .row{ display: grid; gap: 10px; }
+    @media (min-width: 720px){ .form .row{ grid-template-columns: 1fr 1fr; } }
+
+    .helper{
+      margin-top: 10px;
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .booking{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.66));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    .booking::before{
+      content:"";
+      position:absolute; inset: -2px;
+      background:
+        radial-gradient(1200px 520px at 22% 0%, rgba(138,107,255,.16), transparent 55%),
+        radial-gradient(1200px 520px at 84% 24%, rgba(27,191,155,.10), transparent 62%);
+      opacity: .65;
+      pointer-events:none;
+    }
+    .booking-inner{
+      position: relative; z-index: 1;
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+    @media (min-width: 720px){ .booking-inner{ padding: 22px; } }
+
+    .status-row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .small-link{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(27,24,22,.74);
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      background: transparent;
+      border: none;
+      padding: 8px 8px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .small-link:hover{ color: rgba(27,24,22,.95); }
+
+    .loading{
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.72);
+      box-shadow: var(--shadow-2);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .spinner{
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      border: 2px solid rgba(27,24,22,.18);
+      border-top-color: rgba(138,107,255,.56);
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin{ to{ transform: rotate(360deg);} }
+
+    .widget-shell{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.70);
+      box-shadow: var(--shadow-2);
+      overflow: hidden;
+      position: relative;
+      min-height: 640px;
+    }
+
+    .calendly-inline-widget{
+      width: 100%;
+      min-width: 320px;
+      height: 760px;
+      border: 0;
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,.01);
+    }
+    @media (max-width: 520px){
+      .calendly-inline-widget{ height: 860px; }
+      .widget-shell{ min-height: 720px; }
+    }
+    @media (min-width: 1020px){
+      .calendly-inline-widget{ height: 740px; }
+      .widget-shell{ min-height: 680px; }
+    }
+
+    .skeleton{
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(900px 320px at 18% 20%, rgba(138,107,255,.12), transparent 60%),
+        radial-gradient(900px 320px at 88% 16%, rgba(27,191,155,.10), transparent 62%),
+        linear-gradient(180deg, rgba(255,255,255,.70), rgba(255,255,255,.55));
+      opacity: .9;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .consent-overlay{
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      z-index: 3;
+      background: linear-gradient(180deg, rgba(251,250,248,.88), rgba(255,255,255,.72));
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .consent-box{
+      width: min(720px, 100%);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.12);
+      background: rgba(255,255,255,.86);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+    }
+    @media (min-width: 720px){ .consent-box{ padding: 18px; } }
+    .consent-box p{ margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.7; }
+    .consent-actions{ display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+    .error{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(27,24,22,.12);
+      background: rgba(255,255,255,.86);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .error p{ margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.7; }
+
+    footer{
+      border-top: 1px solid rgba(27,24,22,.10);
+      background: rgba(255,255,255,.66);
+      padding: 28px 0;
+    }
+    .footer-inner{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-links{ display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .footer-links a{
+      color: rgba(27,24,22,.74);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      font-weight: 900;
+    }
+    .footer-links a:hover{ color: rgba(27,24,22,.95); }
+
+    .to-top{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1500;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: opacity .18s ease, transform .18s ease;
+    }
+    .to-top.visible{
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .to-top .btn{
+      border-radius: 999px;
+      padding: 12px 14px;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Malkurs: MalZeit",
+    "description": "Hochwertiger, ruhiger Malkurs. Inhalte, Ablauf und Preise als Platzhalter.",
+    "provider": {
+      "@type": "Organization",
+      "name": "MalZeit",
+      "url": "#"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Zur Startseite">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">
+          <small>Malkurs</small>
+          <span>MalZeit</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Hauptnavigation">
+        <button class="nav-toggle" id="navToggle" type="button" aria-controls="navPanel" aria-expanded="false" aria-label="Menü öffnen">
+          <span class="dots" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>Menü</span>
+        </button>
+
+        <ul class="nav-list" aria-label="Abschnitte">
+          <li><a href="#kurs">Kurs</a></li>
+          <li><a href="#materialien">Materialien</a></li>
+          <li><a href="#preise">Preise</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#ueber">Über mich</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <a class="nav-cta" href="#termin" aria-label="Direkt zur Terminbuchung">Termin buchen</a>
+      </nav>
+    </div>
+
+    <div class="nav-panel" id="navPanel" aria-label="Navigation">
+      <div class="container">
+        <ul class="nav-list" id="navList">
+          <li><a href="#kurs">Kursüberblick</a></li>
+          <li><a href="#materialien">Materialien</a></li>
+          <li><a href="#preise">Preise</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#ueber">Über mich</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#termin">Termin buchen</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="hero" id="top" aria-label="Einführung">
+      <div class="container hero-grid">
+        <div class="card">
+          <div class="card-inner">
+            <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Ruhig · Klar · Kunstnah</span>
+            <h1>Malkurs: MalZeit</h1>
+            <p class="lead">
+              Ein hochwertiger, entschleunigter Kurs für konzentriertes Arbeiten mit Farbe, Form und Bildidee.
+              (Platzhaltertext: kurzer Claim, den du später ersetzt.)
+            </p>
+
+            <div class="hero-actions" role="group" aria-label="Primäre Aktionen">
+              <a class="btn primary" href="#termin">Termin buchen</a>
+              <a class="btn ghost" href="#kurs">Kurs entdecken</a>
+            </div>
+
+            <p class="fineprint">
+              Kleine Gruppen, klare Anleitung, Raum für eigene Handschrift. (Platzhaltertext)
+            </p>
+          </div>
+        </div>
+
+        <aside class="card hero-aside" aria-label="Kurzüberblick">
+          <div class="card-inner">
+            <span class="eyebrow" style="width: fit-content;"><span class="dot" aria-hidden="true"></span> Auf einen Blick</span>
+            <div class="stats" aria-label="Kursmerkmale">
+              <div class="stat">
+                <strong>Dauer</strong>
+                <span>z. B. 2–3 Stunden pro Termin (Platzhalter)</span>
+              </div>
+              <div class="stat">
+                <strong>Niveau</strong>
+                <span>Anfänger bis Fortgeschrittene (Platzhalter)</span>
+              </div>
+              <div class="stat">
+                <strong>Fokus</strong>
+                <span>Technik, Bildaufbau, Ausdruck (Platzhalter)</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="quote-strip" aria-label="Zitat des Tages">
+        <div class="container">
+          <div class="quote-card">
+            <div class="quote-inner">
+              <span class="eyebrow" style="width: fit-content;"><span class="dot" aria-hidden="true"></span> Zitat des Tages</span>
+              <blockquote id="quoteText">„…“</blockquote>
+              <div class="quote-meta">
+                <span class="author" id="quoteAuthor">— …</span>
+                <span aria-hidden="true">·</span>
+                <a id="quoteSource" href="#" target="_blank" rel="noopener noreferrer" aria-label="Quelle des Zitats öffnen">Quelle</a>
+                <span id="quoteHint" style="color: var(--muted-2);">· datumsgesteuerte Auswahl</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kurs" aria-label="Kursüberblick">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kursüberblick</h2>
+          <p>
+            Für wen ist MalZeit gedacht, was lernst du – und wie läuft ein Termin ab?
+            (Platzhaltertext: kurze Einleitung.)
+          </p>
+        </div>
+
+        <div class="grid-3" role="list">
+          <div class="tile" role="listitem">
+            <h3>Für wen</h3>
+            <p>
+              Platzhalter: Zielgruppe (z. B. Menschen, die einen ruhigen Einstieg suchen, Wieder-Einsteiger:innen,
+              Fortgeschrittene mit Fokus auf Bildsprache).
+            </p>
+            <ul class="list">
+              <li><strong>Kein Leistungsdruck</strong> – klare Anleitung, freundliche Korrektur. (Platzhalter)</li>
+              <li><strong>Individuelle Ziele</strong> – Technik und Ausdruck im eigenen Tempo. (Platzhalter)</li>
+              <li><strong>Bewusste Atmosphäre</strong> – konzentriert, wertschätzend, seriös. (Platzhalter)</li>
+            </ul>
+          </div>
+
+          <div class="tile" role="listitem">
+            <h3>Was du lernst</h3>
+            <p>
+              Platzhalter: Lernziele, Methoden, Materialien, Bildaufbau, Farblehre, Komposition, Pinseltechnik.
+            </p>
+            <ul class="list">
+              <li><strong>Grundlagen</strong>: Tonwerte, Kontraste, Formen. (Platzhalter)</li>
+              <li><strong>Farbe</strong>: Mischen, Harmonien, Akzente. (Platzhalter)</li>
+              <li><strong>Bildidee</strong>: Motiv, Reduktion, Fokus. (Platzhalter)</li>
+            </ul>
+          </div>
+
+          <div class="tile" role="listitem">
+            <h3>Ablauf</h3>
+            <p>
+              Platzhalter: Struktur eines Termins (z. B. Ankommen, Demo, Übungsphase, Feedback, Abschluss).
+            </p>
+            <ul class="list">
+              <li><strong>Warm-up</strong>: kurze Übungen zur Hand und Wahrnehmung. (Platzhalter)</li>
+              <li><strong>Fokusblock</strong>: Technik + Anwendung am eigenen Bild. (Platzhalter)</li>
+              <li><strong>Reflexion</strong>: ruhiges Feedback, nächste Schritte. (Platzhalter)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="materialien" aria-label="Materialien und Setting">
+      <div class="container">
+        <div class="section-head">
+          <h2>Materialien &amp; Setting</h2>
+          <p>
+            Was bringst du mit, was stelle ich bereit – und wie ist der Raum gestaltet?
+            (Platzhaltertext: kurze Einleitung.)
+          </p>
+        </div>
+
+        <div class="grid-3" role="list">
+          <div class="tile" role="listitem">
+            <h3>Mitbringen</h3>
+            <p>Platzhalter: persönliche Dinge, die du gern nutzt (z. B. Schürze, Skizzenbuch, Lieblingspinsel).</p>
+            <ul class="list">
+              <li><strong>Bequeme Kleidung</strong> (Platzhalter)</li>
+              <li><strong>Skizzenbuch</strong> oder Papier (Platzhalter)</li>
+              <li><strong>Optional</strong>: eigene Vorlagen/Motive (Platzhalter)</li>
+            </ul>
+          </div>
+
+          <div class="tile" role="listitem">
+            <h3>Wird gestellt</h3>
+            <p>Platzhalter: Basismaterialien, Farben, Papier/Leinwand, Staffeleien, Wasserbehälter, etc.</p>
+            <ul class="list">
+              <li><strong>Grundausstattung</strong> an Werkzeugen (Platzhalter)</li>
+              <li><strong>Auswahl</strong> an Farben/Medien (Platzhalter)</li>
+              <li><strong>Arbeitsplatz</strong> mit Licht und Ruhe (Platzhalter)</li>
+            </ul>
+          </div>
+
+          <div class="tile" role="listitem">
+            <h3>Atmosphäre</h3>
+            <p>Platzhalter: ruhig, klar, kunstaffin – mit Raum für Konzentration und Austausch.</p>
+            <ul class="list">
+              <li><strong>Kleine Gruppe</strong> (Platzhalter)</li>
+              <li><strong>Gutes Licht</strong> &amp; angenehme Akustik (Platzhalter)</li>
+              <li><strong>Pausen</strong> nach Bedarf (Platzhalter)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preise" aria-label="Preise und Optionen">
+      <div class="container">
+        <div class="section-head">
+          <h2>Preise / Optionen</h2>
+          <p>
+            Transparent und fair – wähle das Format, das zu deinem Rhythmus passt.
+            (Platzhaltertext: ggf. Hinweis zu Materialkosten.)
+          </p>
+        </div>
+
+        <div class="pricing">
+          <div class="price-card">
+            <div class="badge" aria-label="Option">Einzeltermin</div>
+            <div class="price-title">Einzeltermin</div>
+            <div class="price-amt">€ XX <small>pro Termin</small></div>
+            <ul>
+              <li>Platzhalter: Dauer &amp; Umfang</li>
+              <li>Platzhalter: inkl./exkl. Materialien</li>
+              <li>Platzhalter: ideal zum Kennenlernen</li>
+            </ul>
+            <div style="margin-top: 14px;">
+              <a class="btn" href="#termin">Jetzt buchen</a>
+            </div>
+          </div>
+
+          <div class="price-card featured">
+            <div class="badge" aria-label="Empfohlen">4er-Block</div>
+            <div class="price-title">4er-Block</div>
+            <div class="price-amt">€ XX <small>gesamt</small></div>
+            <ul>
+              <li>Platzhalter: kontinuierlicher Lernbogen</li>
+              <li>Platzhalter: Preisvorteil gegenüber Einzelterminen</li>
+              <li>Platzhalter: persönliches Feedback je Termin</li>
+            </ul>
+            <div style="margin-top: 14px;">
+              <a class="btn primary" href="#termin">Block buchen</a>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <div class="badge" aria-label="Option">Privatkurs</div>
+            <div class="price-title">Privatkurs</div>
+            <div class="price-amt">€ XX <small>ab</small></div>
+            <ul>
+              <li>Platzhalter: 1:1 oder Kleingruppe nach Wunsch</li>
+              <li>Platzhalter: Themenfokus (z. B. Porträt, Landschaft, Abstraktion)</li>
+              <li>Platzhalter: individuelle Terminvereinbarung</li>
+            </ul>
+            <div style="margin-top: 14px;">
+              <a class="btn" href="#kontakt">Anfragen</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="helper" style="margin-top: 14px;">
+          Hinweis (Platzhalter): Ermäßigungen, Gutscheine oder Sondertermine können hier erwähnt werden.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="galerie" aria-label="Galerie">
+      <div class="container">
+        <div class="section-head">
+          <h2>Galerie</h2>
+          <p>
+            Eindruck aus dem Kurs und aus Arbeiten der Teilnehmenden (Platzhalter).
+            Hier sind bewusst neutrale Platzhalter-Kacheln, die du später durch Bilder ersetzt.
+          </p>
+        </div>
+
+        <div class="gallery" role="list" aria-label="Galeriekacheln">
+          <figure role="listitem" aria-label="Galerie Platzhalter 1">
+            <div class="img-ph" aria-hidden="true"><span>Bildkachel 01<br>(Platzhalter)</span></div>
+            <figcaption>Platzhalter: kurzer Bildtitel / Medium / Datum</figcaption>
+          </figure>
+          <figure role="listitem" aria-label="Galerie Platzhalter 2">
+            <div class="img-ph" aria-hidden="true"><span>Bildkachel 02<br>(Platzhalter)</span></div>
+            <figcaption>Platzhalter: kurzer Bildtitel / Medium / Datum</figcaption>
+          </figure>
+          <figure role="listitem" aria-label="Galerie Platzhalter 3">
+            <div class="img-ph" aria-hidden="true"><span>Bildkachel 03<br>(Platzhalter)</span></div>
+            <figcaption>Platzhalter: kurzer Bildtitel / Medium / Datum</figcaption>
+          </figure>
+          <figure role="listitem" aria-label="Galerie Platzhalter 4">
+            <div class="img-ph" aria-hidden="true"><span>Bildkachel 04<br>(Platzhalter)</span></div>
+            <figcaption>Platzhalter: kurzer Bildtitel / Medium / Datum</figcaption>
+          </figure>
+          <figure role="listitem" aria-label="Galerie Platzhalter 5">
+            <div class="img-ph" aria-hidden="true"><span>Bildkachel 05<br>(Platzhalter)</span></div>
+            <figcaption>Platzhalter: kurzer Bildtitel / Medium / Datum</figcaption>
+          </figure>
+          <figure role="listitem" aria-label="Galerie Platzhalter 6">
+            <div class="img-ph" aria-hidden="true"><span>Bildkachel 06<br>(Platzhalter)</span></div>
+            <figcaption>Platzhalter: kurzer Bildtitel / Medium / Datum</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ueber" aria-label="Über mich">
+      <div class="container">
+        <div class="section-head">
+          <h2>Über mich</h2>
+          <p>
+            Kurzprofil der Kursleitung – seriös, kunstaffin und nahbar.
+            (Platzhaltertext: bitte später mit deinem Profil ersetzen.)
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="portrait" aria-label="Profilkarte">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="meta">
+              <strong>Vorname Nachname</strong>
+              <span>Kursleitung · Atelier/Ort (Platzhalter)</span>
+            </div>
+            <p>
+              Platzhalter: 3–5 Sätze zu Hintergrund, künstlerischer Praxis, didaktischem Ansatz, Ausstellung/Studium/Erfahrung (falls gewünscht).
+              Fokus: ruhige Anleitung, saubere Technik, respektvolles Feedback.
+            </p>
+            <p style="margin-top: 0; color: var(--muted-2); font-size: 13px; line-height: 1.7;">
+              Optional (Platzhalter): Mitgliedschaften, Schwerpunkte, Referenzen.
+            </p>
+          </div>
+
+          <div class="tile" style="padding: 18px;" aria-label="Arbeitsweise">
+            <h3>Arbeitsweise &amp; Werte</h3>
+            <p>
+              Platzhalter: Was die Teilnehmenden erwartet – Klarheit in der Technik, Raum für Experiment, seriöse Atmosphäre.
+            </p>
+            <ul class="list">
+              <li><strong>Struktur</strong>: kleine Impulse, dann konzentrierte Praxis. (Platzhalter)</li>
+              <li><strong>Feedback</strong>: präzise, respektvoll, handwerklich fundiert. (Platzhalter)</li>
+              <li><strong>Eigenständigkeit</strong>: du entwickelst deine Bildsprache. (Platzhalter)</li>
+              <li><strong>Materialbewusstsein</strong>: Umgang mit Werkzeugen &amp; Medien. (Platzhalter)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-label="Häufige Fragen">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p>Fünf typische Fragen – kurz, klar, hilfreich. (Platzhaltertexte.)</p>
+        </div>
+
+        <div class="faq" role="list" aria-label="FAQ-Liste">
+          <details role="listitem">
+            <summary>Welche Vorkenntnisse brauche ich?</summary>
+            <div class="faq-content">
+              <p>Platzhalter: Antwort – z. B. keine, du wirst auf deinem Niveau abgeholt; optionales Material vorab.</p>
+            </div>
+          </details>
+
+          <details role="listitem">
+            <summary>Welche Technik/Materialien werden im Kurs genutzt?</summary>
+            <div class="faq-content">
+              <p>Platzhalter: Antwort – z. B. Acryl/Aquarell/Zeichnung; Papier/Leinwand; Fokus auf Grundlagen und Anwendung.</p>
+            </div>
+          </details>
+
+          <details role="listitem">
+            <summary>Wie groß ist die Gruppe?</summary>
+            <div class="faq-content">
+              <p>Platzhalter: Antwort – z. B. kleine Gruppen für echte Betreuung; Mindest-/Maximalteilnehmende.</p>
+            </div>
+          </details>
+
+          <details role="listitem">
+            <summary>Was passiert bei kurzfristiger Absage?</summary>
+            <div class="faq-content">
+              <p>Platzhalter: Antwort – z. B. Stornobedingungen, Umbuchung, Kulanzregel, Fristen.</p>
+            </div>
+          </details>
+
+          <details role="listitem">
+            <summary>Kann ich einen Gutschein verschenken?</summary>
+            <div class="faq-content">
+              <p>Platzhalter: Antwort – z. B. ja, digitale oder gedruckte Gutscheine; individuelle Beträge; Ablauf.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="termin" aria-label="Termin buchen">
+      <div class="container">
+        <div class="section-head">
+          <h2>Termin buchen</h2>
+          <p>
+            Der Kalender ist direkt hier eingebettet. DSGVO-freundlich: Er wird erst nach deiner Zustimmung geladen.
+            Du kannst die Zustimmung jederzeit zurücknehmen. (Platzhaltertext: ergänze Details in deiner Datenschutzerklärung.)
+          </p>
+        </div>
+
+        <div class="booking" role="region" aria-label="Buchungsbereich">
+          <div class="booking-inner">
+            <div class="status-row" aria-label="Status und Steuerung">
+              <div class="loading" id="calendlyLoading" aria-live="polite" hidden>
+                <span class="spinner" aria-hidden="true"></span>
+                <span>Kalender wird geladen …</span>
+              </div>
+
+              <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                <button class="small-link" type="button" id="calendlyDeactivateBtn" hidden aria-label="Calendly-Kalender wieder deaktivieren">Kalender deaktivieren</button>
+                <a class="small-link" id="calendlyExternalLinkTop" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer" aria-label="Termin extern in Calendly öffnen">Extern in Calendly öffnen</a>
+              </div>
+            </div>
+
+            <div class="widget-shell" aria-label="Eingebetteter Kalenderbereich">
+              <div class="skeleton" id="calendlySkeleton" aria-hidden="true"></div>
+
+              <div class="consent-overlay" id="calendlyConsentOverlay" role="group" aria-label="Zustimmung zum Laden des Calendly-Kalenders">
+                <div class="consent-box">
+                  <span class="eyebrow" style="width: fit-content;"><span class="dot" aria-hidden="true"></span> Externer Inhalt</span>
+                  <p>
+                    Um den eingebetteten Kalender anzuzeigen, wird ein externer Dienst (Calendly) geladen.
+                    Dabei können Daten (z. B. IP-Adresse) an Calendly übermittelt werden. (Platzhaltertext)
+                  </p>
+                  <div class="consent-actions">
+                    <button class="btn primary" type="button" id="calendlyActivateBtn" aria-label="Calendly-Kalender laden und Zustimmung speichern">Kalender laden</button>
+                    <a class="btn ghost" id="calendlyExternalLinkMid" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer" aria-label="Alternativ extern in Calendly öffnen">Extern öffnen</a>
+                  </div>
+                  <p class="helper" style="margin:0;">
+                    Hinweis: Deine Zustimmung wird lokal im Browser gespeichert (localStorage) und kann jederzeit zurückgesetzt werden.
+                  </p>
+                </div>
+              </div>
+
+              <div id="calendlyMount" aria-label="Calendly Inline-Widget Container"></div>
+            </div>
+
+            <div class="error" id="calendlyError" hidden role="alert">
+              <strong>Der Kalender konnte leider nicht geladen werden.</strong>
+              <p>
+                Bitte versuche es später erneut – oder öffne die Buchung direkt bei Calendly.
+                (Platzhaltertext: optionaler Support-Hinweis.)
+              </p>
+              <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+                <a class="btn primary" id="calendlyExternalLinkErr" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer">Termin extern in Calendly öffnen</a>
+                <button class="btn" type="button" id="calendlyRetryBtn">Erneut versuchen</button>
+              </div>
+            </div>
+
+            <p class="helper" style="margin:0;">
+              Tipp (Platzhalter): Wenn du die Terminseite in deiner Datenschutzerklärung erwähnst, verweise auf die Zustimmung und den externen Anbieter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt" aria-label="Kontakt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kontakt</h2>
+          <p>Fragen, Privatkurs-Anfrage oder Gutschein? Schreib mir – ich antworte zeitnah. (Platzhaltertext.)</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact-card" aria-label="Kontaktdaten">
+            <h3>Direktkontakt</h3>
+            <div class="contact-list">
+              <a class="pill" href="#" aria-label="E-Mail Platzhalter">
+                <span class="icon" aria-hidden="true"></span>
+                <span><strong>E-Mail:</strong> name@example.com (Platzhalter)</span>
+              </a>
+              <a class="pill" href="#" aria-label="Telefon Platzhalter">
+                <span class="icon" aria-hidden="true"></span>
+                <span><strong>Telefon:</strong> +49 000 000000 (Platzhalter)</span>
+              </a>
+            </div>
+
+            <h3 style="margin-top: 16px;">Social</h3>
+            <div class="contact-list" aria-label="Social Links">
+              <a class="pill" href="#" aria-label="Instagram Platzhalter">
+                <span class="icon" aria-hidden="true"></span>
+                <span>Instagram (Platzhalter-Link)</span>
+              </a>
+              <a class="pill" href="#" aria-label="Facebook Platzhalter">
+                <span class="icon" aria-hidden="true"></span>
+                <span>Facebook (Platzhalter-Link)</span>
+              </a>
+              <a class="pill" href="#" aria-label="Portfolio Platzhalter">
+                <span class="icon" aria-hidden="true"></span>
+                <span>Portfolio/Website (Platzhalter-Link)</span>
+              </a>
+            </div>
+
+            <p class="helper" style="margin-top: 14px;">
+              Optional (Platzhalter): Atelieradresse, Anfahrtsinfo, Parken/ÖPNV, Barrierefreiheit.
+            </p>
+          </div>
+
+          <div class="contact-card" aria-label="Kontaktformular">
+            <h3>Nachricht senden</h3>
+            <p class="helper" style="margin-top: 0;">
+              Platzhalter: Dieses Formular sendet ohne Backend nichts ab. Du kannst es später an ein Formular-Backend anbinden oder entfernen.
+            </p>
+            <form class="form" action="#" method="post" aria-label="Kontaktformular (Platzhalter)" onsubmit="return false;">
+              <div class="row">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Platzhalter: Dein Name" autocomplete="name">
+                </label>
+                <label>
+                  E-Mail
+                  <input type="email" name="email" placeholder="Platzhalter: deine@email.de" autocomplete="email">
+                </label>
+              </div>
+              <label>
+                Nachricht
+                <textarea name="message" placeholder="Platzhalter: Worum geht es?"></textarea>
+              </label>
+              <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                <button class="btn primary" type="submit" aria-label="Platzhalter-Button: Formular absenden">Senden (Platzhalter)</button>
+                <span class="helper" style="margin:0;">Alternativ: direkt per E-Mail/Telefon. (Platzhalter)</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section legal" aria-label="Rechtliches">
+      <div class="container">
+        <div class="section-head">
+          <h2>Rechtliches</h2>
+          <p>Platzhalterbereiche für Impressum und Datenschutz. Die Footer-Links springen hierhin.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="tile" id="impressum" aria-label="Impressum">
+            <h3>Impressum (Platzhalter)</h3>
+            <p>
+              Platzhalter: Anbieterkennzeichnung, Adresse, Kontakt, ggf. USt-IdNr., Verantwortliche Person, etc.
+            </p>
+          </div>
+
+          <div class="tile" id="datenschutz" aria-label="Datenschutz">
+            <h3>Datenschutz (Platzhalter)</h3>
+            <p>
+              Platzhalter: Datenschutzhinweise, insbesondere zum externen Dienst Calendly (nach Zustimmung), sowie weitere Dienste/Tracking (falls vorhanden).
+            </p>
+          </div>
+
+          <div class="tile" aria-label="Hinweise">
+            <h3>Hinweise</h3>
+            <p>
+              Platzhalter: AGB, Stornobedingungen, Haftungsausschluss, Bildrechte, etc. (optional).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <div>© <span id="year">2026</span> MalZeit · (Platzhalter) Alle Rechte vorbehalten.</div>
+      <div class="footer-links" aria-label="Footer Links">
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+        <a href="#top" aria-label="Zurück nach oben">Nach oben</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="to-top" id="toTop" aria-label="Nach oben">
+    <a class="btn" href="#top" aria-label="Nach oben springen">↑</a>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const CALENDLY_URL = "https://calendly.com/lasse-teunis/neues-meeting";
+      const CONSENT_KEY = "calendlyConsent";
+
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+      // Mobile nav
+      const navToggle = document.getElementById("navToggle");
+      const navPanel = document.getElementById("navPanel");
+
+      function closeNav() {
+        if (!navPanel || !navToggle) return;
+        navPanel.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+      function toggleNav() {
+        if (!navPanel || !navToggle) return;
+        const isOpen = navPanel.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      }
+
+      if (navToggle && navPanel) {
+        navToggle.addEventListener("click", toggleNav);
+        document.addEventListener("click", (e) => {
+          const t = e.target;
+          if (!t) return;
+          const insidePanel = navPanel.contains(t);
+          const insideToggle = navToggle.contains(t);
+          if (!insidePanel && !insideToggle) closeNav();
+        });
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNav(); });
+        navPanel.querySelectorAll("a[href^='#']").forEach(a => a.addEventListener("click", closeNav));
+      }
+
+      // Back-to-top
+      const toTop = document.getElementById("toTop");
+      function updateToTop() {
+        if (!toTop) return;
+        toTop.classList.toggle("visible", window.scrollY > 700);
+      }
+      window.addEventListener("scroll", updateToTop, { passive: true });
+      updateToTop();
+
+      // Daily quote (deterministic by day-of-year)
+      const quotes = [
+        { text: "Kunst gibt nicht das Sichtbare wieder, sondern macht sichtbar.", author: "Paul Klee", source: "https://de.wikiquote.org/wiki/Paul_Klee" },
+        { text: "Als Kind ist jeder ein Künstler. Die Schwierigkeit liegt darin, als Erwachsener einer zu bleiben.", author: "Pablo Picasso", source: "https://de.wikiquote.org/wiki/Pablo_Picasso" },
+        { text: "Kunst wäscht den Staub des Alltags von der Seele.", author: "Pablo Picasso", source: "https://de.wikiquote.org/wiki/Pablo_Picasso" },
+        { text: "Bezeichnest du die Malerei als stumme Dichtung, so kann der Maler erst recht die Dichtung als blinde Malerei bezeichnen.", author: "Leonardo da Vinci", source: "https://de.wikiquote.org/wiki/Leonardo_da_Vinci" },
+        { text: "Denn wahrhaftig steckt die Kunst in der Natur, wer sie heraus kann reißen, der hat sie.", author: "Albrecht Dürer", source: "https://de.wikiquote.org/wiki/Albrecht_D%C3%BCrer" },
+        { text: "Malen ist ja eine andere Form des Denkens.", author: "Gerhard Richter", source: "https://de.wikiquote.org/wiki/Gerhard_Richter" },
+        { text: "Jeder Mensch ist ein Künstler.", author: "Joseph Beuys", source: "https://de.wikiquote.org/wiki/Joseph_Beuys" },
+        { text: "Kunst ist immer und durchaus Ausdruck der Persönlichkeit.", author: "Erich Mühsam", source: "https://de.wikiquote.org/wiki/Erich_M%C3%BChsam" },
+        { text: "Genie ist ein Prozent Inspiration und neunundneunzig Prozent Transpiration.", author: "Thomas Alva Edison", source: "https://de.wikiquote.org/wiki/Thomas_Alva_Edison" },
+        { text: "Die Farbe hat mich. Ich brauche nicht nach ihr zu haschen. Sie hat mich für immer.", author: "Paul Klee", source: "https://de.wikiquote.org/wiki/Paul_Klee" },
+        { text: "Malerei verwandelt den Raum in Zeit, Musik die Zeit in Raum.", author: "Hugo von Hofmannsthal", source: "https://de.wikiquote.org/wiki/Hugo_von_Hofmannsthal" },
+        { text: "Kunst ist, wenn man's nicht kann, denn wenn man's kann, ist's keine Kunst.", author: "Johann Nestroy", source: "https://de.wikiquote.org/wiki/Johann_Nestroy" },
+        { text: "Kreativität: Man muss nicht immer da anknüpfen, wo man den Faden verloren hat, sondern auch mal etwas Neues einfädeln.", author: "Gerhard Uhlenbruck", source: "https://de.wikiquote.org/wiki/Gerhard_Uhlenbruck" },
+        { text: "Kunst besteht nie in Regeln, sondern immer in Ausnahmen vom Standpunkt des Erfahrungsmäßigen.", author: "Willi Baumeister", source: "https://de.wikiquote.org/wiki/Willi_Baumeister" },
+        { text: "Kunst ist eine freie Nachahmung der Natur mit Bewusstsein.", author: "Sophie Mereau", source: "https://de.wikiquote.org/wiki/Sophie_Mereau" },
+        { text: "Alle großen Menschen bilden sich ein, mehr oder weniger inspiriert zu sein.", author: "Joseph Joubert", source: "https://de.wikiquote.org/wiki/Joseph_Joubert" },
+        { text: "Ein Bild ist eine Entscheidungskette: Weglassen, ordnen, akzentuieren.", author: "Platzhalter-Autor:in", source: "#" },
+        { text: "Damit ein Bild wirken kann, muss es still sein – in sich selbst.", author: "Platzhalter-Autor:in", source: "#" },
+        { text: "Das Auge übt sich am Einfachen und findet darin Tiefe.", author: "Platzhalter-Autor:in", source: "#" },
+        { text: "Technik ist nicht Grenze, sondern Freiraum: Sie macht Wiederholung bewusst und Variation möglich.", author: "Platzhalter-Autor:in", source: "#" }
+      ];
+
+      function dayOfYear(d) {
+        const y = d.getFullYear();
+        const start = new Date(y, 0, 0);
+        const diff = d - start;
+        return Math.floor(diff / 86400000);
+      }
+
+      const quoteTextEl = document.getElementById("quoteText");
+      const quoteAuthorEl = document.getElementById("quoteAuthor");
+      const quoteSourceEl = document.getElementById("quoteSource");
+
+      if (quotes.length && quoteTextEl && quoteAuthorEl && quoteSourceEl) {
+        const now = new Date();
+        const doy = dayOfYear(new Date(now.getFullYear(), now.getMonth(), now.getDate()));
+        const idx = ((doy % quotes.length) + quotes.length) % quotes.length;
+        const q = quotes[idx];
+
+        quoteTextEl.textContent = "„" + q.text + "“";
+        quoteAuthorEl.textContent = "— " + q.author;
+
+        const src = q.source || "#";
+        quoteSourceEl.href = src;
+        quoteSourceEl.textContent = (src && src !== "#") ? "Quelle" : "Quelle (Platzhalter)";
+        quoteSourceEl.setAttribute("aria-label", "Quelle zum Zitat von " + q.author + " öffnen");
+      }
+
+      // Calendly consent + robust embed
+      const loadingEl = document.getElementById("calendlyLoading");
+      const errorEl = document.getElementById("calendlyError");
+      const retryBtn = document.getElementById("calendlyRetryBtn");
+      const mountEl = document.getElementById("calendlyMount");
+      const overlayEl = document.getElementById("calendlyConsentOverlay");
+      const activateBtn = document.getElementById("calendlyActivateBtn");
+      const deactivateBtn = document.getElementById("calendlyDeactivateBtn");
+      const skeletonEl = document.getElementById("calendlySkeleton");
+
+      const extTop = document.getElementById("calendlyExternalLinkTop");
+      const extMid = document.getElementById("calendlyExternalLinkMid");
+      const extErr = document.getElementById("calendlyExternalLinkErr");
+      [extTop, extMid, extErr].forEach(a => { if (a) a.href = CALENDLY_URL; });
+
+      function setLoading(on){
+        if (!loadingEl) return;
+        loadingEl.hidden = !on;
+      }
+      function setError(on){
+        if (!errorEl) return;
+        errorEl.hidden = !on;
+      }
+      function showOverlay(on){
+        if (!overlayEl) return;
+        overlayEl.hidden = !on;
+      }
+      function showDeactivate(on){
+        if (!deactivateBtn) return;
+        deactivateBtn.hidden = !on;
+      }
+      function showSkeleton(on){
+        if (!skeletonEl) return;
+        skeletonEl.hidden = !on;
+      }
+
+      function hasConsent(){
+        try { return localStorage.getItem(CONSENT_KEY) === "true"; }
+        catch(e){ return false; }
+      }
+      function setConsent(val){
+        try {
+          if (val) localStorage.setItem(CONSENT_KEY, "true");
+          else localStorage.removeItem(CONSENT_KEY);
+        } catch(e){}
+      }
+
+      let observer = null;
+      let timeout = null;
+
+      function cleanupWatch(){
+        if (observer) { try { observer.disconnect(); } catch(e) {} observer = null; }
+        if (timeout) { clearTimeout(timeout); timeout = null; }
+      }
+
+      function ensureScript(){
+        let s = document.getElementById("calendly-script");
+        if (s) return s;
+        s = document.createElement("script");
+        s.id = "calendly-script";
+        s.type = "text/javascript";
+        s.src = "https://assets.calendly.com/assets/external/widget.js";
+        s.async = true;
+        document.head.appendChild(s);
+        return s;
+      }
+
+      function mountWidget(){
+        if (!mountEl) return null;
+        mountEl.innerHTML = "";
+        const widget = document.createElement("div");
+        widget.className = "calendly-inline-widget";
+        widget.setAttribute("data-url", CALENDLY_URL);
+        widget.style.minWidth = "320px";
+        widget.style.height = "700px";
+        mountEl.appendChild(widget);
+        return widget;
+      }
+
+      function watchIframe(widget, onReady, onFail){
+        const hasIframe = () => !!(widget && widget.querySelector("iframe"));
+
+        if (hasIframe()) { onReady(); return; }
+
+        observer = new MutationObserver(() => {
+          if (hasIframe()) {
+            cleanupWatch();
+            onReady();
+          }
+        });
+
+        try {
+          observer.observe(widget, { childList: true, subtree: true });
+        } catch(e) {
+          cleanupWatch();
+          onFail();
+          return;
+        }
+
+        timeout = setTimeout(() => {
+          cleanupWatch();
+          onFail();
+        }, 14000);
+      }
+
+      function unloadWidget(){
+        cleanupWatch();
+        setLoading(false);
+        setError(false);
+        showSkeleton(true);
+        showOverlay(true);
+        showDeactivate(false);
+        if (mountEl) mountEl.innerHTML = "";
+      }
+
+      function initCalendly(){
+        cleanupWatch();
+        setError(false);
+        setLoading(true);
+        showSkeleton(true);
+
+        const widget = mountWidget();
+        const script = ensureScript();
+
+        if (!widget || !script){
+          setLoading(false);
+          setError(true);
+          showSkeleton(false);
+          return;
+        }
+
+        let settled = false;
+        const ready = () => {
+          if (settled) return;
+          settled = true;
+          setLoading(false);
+          setError(false);
+          showSkeleton(false);
+          showOverlay(true);
+          showDeactivate(true);
+        };
+        const fail = () => {
+          if (settled) return;
+          settled = true;
+          setLoading(false);
+          setError(true);
+          showSkeleton(false);
+          showOverlay(true);
+          showDeactivate(true);
+        };
+
+        script.addEventListener("error", fail, { once: true });
+
+        const start = () => watchIframe(widget, ready, fail);
+        script.addEventListener("load", start, { once: true });
+        setTimeout(start, 700);
+      }
+
+      function activateCalendly(){
+        setConsent(true);
+        showOverlay(false);
+        showDeactivate(true);
+        initCalendly();
+      }
+
+      function deactivateCalendly(){
+        setConsent(false);
+        unloadWidget();
+      }
+
+      if (activateBtn) activateBtn.addEventListener("click", activateCalendly);
+      if (deactivateBtn) deactivateBtn.addEventListener("click", deactivateCalendly);
+      if (retryBtn) retryBtn.addEventListener("click", initCalendly);
+
+      // Initial state
+      if (hasConsent()) {
+        showOverlay(false);
+        showDeactivate(true);
+        initCalendly();
+      } else {
+        unloadWidget();
+      }
+    })();
+  </script>
+</body>
+</html>
