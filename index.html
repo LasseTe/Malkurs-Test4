@@ -1,4 +1,4 @@
-        <div class="hero-actions" role="group" aria-label="Primäre Aktionen">
+              <div class="hero-actions" role="group" aria-label="Primäre Aktionen">
           <a class="btn primary" href="#termin">Termin buchen</a>
           <a class="btn ghost" href="#kurs">Kurs entdecken</a>
         </div>
@@ -11,7 +11,7 @@
 
     <aside class="card hero-aside" aria-label="Kurzüberblick">
       <div class="card-inner">
-        <h2 style="font-size: 20px; letter-spacing: -0.02em;">Auf einen Blick</h2>
+        <span class="eyebrow" style="width: fit-content;"><span class="dot" aria-hidden="true"></span> Auf einen Blick</span>
         <div class="stats" aria-label="Kursmerkmale">
           <div class="stat">
             <strong>Dauer</strong>
@@ -34,13 +34,13 @@
     <div class="container">
       <div class="quote-card">
         <div class="quote-inner">
-          <div class="eyebrow" style="width: fit-content;"><span class="dot" aria-hidden="true"></span> Zitat des Tages</div>
+          <span class="eyebrow" style="width: fit-content;"><span class="dot" aria-hidden="true"></span> Zitat des Tages</span>
           <blockquote id="quoteText">„…“</blockquote>
           <div class="quote-meta">
             <span class="author" id="quoteAuthor">— …</span>
             <span aria-hidden="true">·</span>
             <a id="quoteSource" href="#" target="_blank" rel="noopener noreferrer" aria-label="Quelle des Zitats öffnen">Quelle</a>
-            <span id="quoteHint" style="color: var(--muted-2);">— Auswahl ist datumsgesteuert</span>
+            <span id="quoteHint" style="color: var(--muted-2);">· datumsgesteuerte Auswahl</span>
           </div>
         </div>
       </div>
@@ -263,12 +263,12 @@
           Platzhalter: 3–5 Sätze zu Hintergrund, künstlerischer Praxis, didaktischem Ansatz, Ausstellung/Studium/Erfahrung (falls gewünscht).
           Fokus: ruhige Anleitung, saubere Technik, respektvolles Feedback.
         </p>
-        <p style="margin-top: 0; color: var(--muted-2); font-size: 13px;">
+        <p style="margin-top: 0; color: var(--muted-2); font-size: 13px; line-height: 1.7;">
           Optional (Platzhalter): Mitgliedschaften, Schwerpunkte, Referenzen.
         </p>
       </div>
 
-      <div class="tile" style="padding: 18px; border-radius: var(--radius-lg);" aria-label="Arbeitsweise">
+      <div class="tile" style="padding: 18px;" aria-label="Arbeitsweise">
         <h3>Arbeitsweise &amp; Werte</h3>
         <p>
           Platzhalter: Was die Teilnehmenden erwartet – Klarheit in der Technik, Raum für Experiment, seriöse Atmosphäre.
@@ -335,54 +335,41 @@
     <div class="section-head">
       <h2>Termin buchen</h2>
       <p>
-        DSGVO-freundlich: Der Kalender wird erst nach deiner Zustimmung geladen. Du kannst ihn jederzeit wieder deaktivieren.
-        Wenn etwas nicht funktioniert, kannst du den Termin auch extern in Calendly öffnen.
+        Der Kalender ist direkt hier eingebettet (Inline-Widget). (Platzhaltertext: ergänze ggf. Hinweise in deiner Datenschutzerklärung.)
       </p>
     </div>
 
     <div class="booking" role="region" aria-label="Buchungsbereich">
       <div class="booking-inner">
-        <div class="consent-box" id="calendlyConsentBox" role="group" aria-label="Zustimmung zum Laden des Calendly-Kalenders">
-          <p>
-            Um Termine direkt hier zu buchen, wird ein externer Dienst (Calendly) geladen. Dabei können Daten (z. B. IP-Adresse) an Calendly übermittelt werden.
-            (Platzhaltertext: ergänze ggf. Details zu deiner Datenschutzerklärung.)
-          </p>
-          <div class="consent-actions">
-            <button class="btn primary" type="button" id="calendlyActivateBtn" aria-label="Calendly-Kalender laden und Zustimmung speichern">Kalender laden</button>
-            <a class="btn ghost" id="calendlyExternalLinkTop" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer" aria-label="Termin extern in Calendly öffnen">Extern öffnen</a>
-          </div>
-          <p class="helper">Hinweis: Deine Zustimmung wird lokal im Browser gespeichert (localStorage) und kann jederzeit zurückgesetzt werden.</p>
-        </div>
-
-        <div class="widget-wrap" id="calendlyWidgetWrap" hidden aria-label="Calendly-Kalender">
+        <div class="status-row" aria-label="Status und Steuerung">
           <div class="loading" id="calendlyLoading" aria-live="polite">
-            <div style="display:flex; gap:10px; align-items:center;">
-              <span class="spinner" aria-hidden="true"></span>
-              <span>Kalender wird geladen …</span>
-            </div>
-            <div class="helper">Falls es länger dauert: Du kannst jederzeit extern in Calendly fortfahren.</div>
-            <a class="small-link" id="calendlyExternalLinkMid" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer">Termin extern in Calendly öffnen</a>
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Kalender wird geladen …</span>
           </div>
 
+          <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+            <a class="small-link" id="calendlyExternalLinkTop" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer" aria-label="Termin extern in Calendly öffnen">Extern in Calendly öffnen</a>
+          </div>
+        </div>
+
+        <div class="widget-shell" aria-label="Eingebetteter Kalenderbereich">
           <div id="calendlyMount" aria-label="Calendly Inline-Widget Container"></div>
+        </div>
 
-          <div class="error" id="calendlyError" hidden role="alert">
-            <strong>Der Kalender konnte leider nicht geladen werden.</strong>
-            <p>
-              Bitte versuche es später erneut – oder öffne die Buchung direkt bei Calendly.
-              (Platzhaltertext: optionaler Support-Hinweis.)
-            </p>
-            <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-              <a class="btn primary" id="calendlyExternalLinkErr" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer">Termin extern in Calendly öffnen</a>
-              <button class="btn" type="button" id="calendlyRetryBtn">Erneut versuchen</button>
-            </div>
+        <div class="error" id="calendlyError" hidden role="alert">
+          <strong>Der Kalender konnte leider nicht geladen werden.</strong>
+          <p>
+            Bitte versuche es später erneut – oder öffne die Buchung direkt bei Calendly.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+            <a class="btn primary" id="calendlyExternalLinkErr" href="https://calendly.com/lasse-teunis/neues-meeting" target="_blank" rel="noopener noreferrer">Termin extern in Calendly öffnen</a>
+            <button class="btn" type="button" id="calendlyRetryBtn">Erneut versuchen</button>
           </div>
         </div>
 
-        <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-          <button class="small-link" type="button" id="calendlyDeactivateBtn" hidden aria-label="Calendly-Kalender wieder deaktivieren">Kalender wieder deaktivieren</button>
-          <span class="helper" style="margin:0;">Du kannst die Zustimmung jederzeit zurücknehmen.</span>
-        </div>
+        <p class="helper" style="margin:0;">
+          Tipp (Platzhalter): Wenn du DSGVO-konform erst nach Zustimmung laden möchtest, kann man das Widget per Consent-Overlay steuern.
+        </p>
       </div>
     </div>
   </div>
@@ -478,7 +465,7 @@
       <div class="tile" id="datenschutz" aria-label="Datenschutz">
         <h3>Datenschutz (Platzhalter)</h3>
         <p>
-          Platzhalter: Datenschutzhinweise, insbesondere zum externen Dienst Calendly (nach Zustimmung), sowie weitere Dienste/Tracking (falls vorhanden).
+          Platzhalter: Datenschutzhinweise, insbesondere zum externen Dienst Calendly, sowie weitere Dienste/Tracking (falls vorhanden).
         </p>
       </div>
 
